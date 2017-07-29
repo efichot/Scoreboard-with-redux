@@ -18,6 +18,6 @@ export const Update_player_score = (index, signe) => {
     return {
         types: PlayerActionTypes.UPDATE_PLAYER_SCORE,
         signe,
-        index
+        index,
     }
 }
