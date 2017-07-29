@@ -22,4 +22,4 @@ Player.propTypes = {
   onScoreChange: React.PropTypes.func.isRequired,
 };
 
-export default Pllayer;
+export default Player;
