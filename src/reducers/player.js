@@ -33,7 +33,7 @@ export default function Player(state=initialState, action) {
             ]
         
         case PlayerActionTypes.UPDATE_PLAYER_SCORE:
-            return state.map(player, index) {
+            return state.map((player, index) => {
                 if (action.index === index) {
                     return {
                         name: player.name,
@@ -41,7 +41,7 @@ export default function Player(state=initialState, action) {
                     }
                 }
                 return player;
-            }
+            });
 
         default:
             return state;
